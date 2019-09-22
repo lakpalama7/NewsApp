@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:id="@+id/error_linearlayout"
+    android:visibility="gone"
+    >
+    <ImageView
+        android:id="@+id/errorimage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/connectionerror">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/errortitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error Title"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/errormessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error Message"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="5dp"/>
+</LinearLayout>

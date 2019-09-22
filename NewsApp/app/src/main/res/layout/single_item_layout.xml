@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/image"
+                android:transitionName="img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+
+                />
+
+          <!--  <ImageView
+                android:id="@+id/shadow_button"
+                android:background="#fafafa"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/image"/>
+-->
+            <ProgressBar
+                android:id="@+id/progress_load_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                style="@android:style/Widget.ProgressBar.Small"
+                />
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:textColor="@android:color/white"
+                android:text="Author"
+                android:gravity="bottom"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+
+
+                />
+
+
+                <TextView
+                    android:id="@+id/publishedate"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_01_january_1919"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/author"
+                    android:layout_below="@+id/image"
+                    android:layout_marginTop="-20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:layout_marginRight="16dp"
+
+
+
+                    />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:layout_below="@+id/image"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="This is the description of the news........"
+                />
+
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:text="Source"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="01/10/2019"
+                android:layout_toRightOf="@+id/source"
+                android:layout_below="@+id/desc"
+                android:maxLines="1"
+                android:drawablePadding="20dp"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
