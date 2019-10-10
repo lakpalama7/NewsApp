@@ -38,7 +38,7 @@ import retrofit2.Response;
  * A simple {@link Fragment} subclass.
  */
 public class TopHeadlinesFragment extends Fragment {
-    public static final String API_KEY="f2ce1033779c435aa4cfa76d3a8476ab";
+    public static final String API_KEY="<<use your API KEY here >>";
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private List<Article> articleList=new ArrayList<>();
